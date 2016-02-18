@@ -1,6 +1,14 @@
-i = 1
-numbers = []
-
+import random
+i = 0
 while i < 7:
-    i=i+1
-    print (i)
+    # Get random number in range 0 through 9.
+    n = random.randint(0, 9)
+    print(n)
+    i += 1
+
+
+print ("64+32=",64+32)
+
+x=float(input("What is x"))
+y=float(input("What is y"))
+print (x+y)
