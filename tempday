@@ -4,27 +4,31 @@ day=0
 while True:
         day += 1
         if day == 3:
-            print ("day")
-            print(tempday)
-            print("night")
-            print(tempnight)
+            print ("day",tempday)
+            print("night",tempnight)
+            print("average day")
+            print((sum(tempday))/(len(tempday)))
+            print("average night")
+            print((sum(tempnight))/(len(tempnight)))
+            print("min day")
+            print(min(tempday))
+            print(min(tempnight))
             quit()
+
         data1=int(input("morning temp"))
+
         if data1 > 40:
             print ("error")
-            tempday.clear(data1)
-        elif data1 < -10:
+        elif data1 < -99:
             print("error")
-            tempday.clear(data1)
         else:
             tempday.append(data1)
-        data2=int(input("night temp"))
-        if data1 > 40:
-            print ("error")
-            tempday.clear(data2)
-        elif data1 < -10:
-            print("error")
-            tempday.clear(data2)
-        else:
-            tempnight.append(data2)
 
+        data2=int(input("night temp"))
+
+        if data2 > 40:
+                print ("error")
+        elif data2 < -99:
+                print("error")
+        else:
+                tempnight.append(data2)
